@@ -43,7 +43,7 @@ Pruebe en su máquina virtual los comandos que estudie en el tutorial.
 
 ### Ejercicios
 
-## Ejercicio 1. 
+#### Ejercicio 1. 
 Si no ha sido creado anteriormente, cree un subdirectorio `practicas` en su directorio `home` (`~`) y clone (haga una copia) 
 dentro de él del repositorio de esta práctica en el (sub) directorio `IB-p02-LinuxCommands`. 
 A este último directorio nos referiremos como 'directorio de trabajo'. Para ello ejecute:
@@ -54,7 +54,7 @@ A este último directorio nos referiremos como 'directorio de trabajo'. Para ell
     git clone git@github.com:IB-2022-2023/P02-LinuxCommands.git IB-p02-LinuxCommands
     ```
 
-## Ejercicio 2. 
+#### Ejercicio 2. 
 Entre en el directorio de trabajo. 
 Encontrará en él el fichero `ProgrammingJoke.txt`. ¿Cuál es el chiste? Busque cualquier otro chiste famoso de programadores y añada el texto del nuevo chiste a continuación de éste.
 
