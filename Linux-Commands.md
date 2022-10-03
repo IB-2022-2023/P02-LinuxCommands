@@ -41,18 +41,36 @@ Estudie en [este tutorial](http://linuxcommand.org/index.php) al menos hasta el 
 
 Pruebe en su máquina virtual los comandos que estudie en el tutorial.
 
-### Ejercicios
+### Introducción a Linux. Ejercicios
+En este documento, el primer carácter `$` en los ejemplos de comandos no debe escribirse, sino que denota el
+símbolo del sistema (**prompt**).
+Algunas líneas de comandos son demasiado largas para caber en una sola línea impresa. 
+Estos se indican con una barra invertida `\` al final de la línea. 
+No debe incluirse al escribir el comando. 
+Por ejemplo
+
+``` .bash
+$ example command \
+continues \
+and continues
+```
+
+Debe escribirse como:
+
+``` .bash
+$ example command continues and continues
+```
 
 #### Ejercicio 1. 
 Si no ha sido creado anteriormente, cree un subdirectorio `practicas` en su directorio `home` (`~`) y clone (haga una copia) 
 dentro de él del repositorio de esta práctica en el (sub) directorio `IB-p02-LinuxCommands`. 
 A este último directorio nos referiremos como 'directorio de trabajo'. Para ello ejecute:
-    ```
-    cd ~
-    mkdir practicas
-    cd practicas
-    git clone git@github.com:IB-2022-2023/P02-LinuxCommands.git IB-p02-LinuxCommands
-    ```
+```
+$ cd ~
+$ mkdir practicas
+$ cd practicas
+$ git clone git@github.com:IB-2022-2023/P02-LinuxCommands.git IB-p02-LinuxCommands
+```
 
 #### Ejercicio 2. 
 Entre en el directorio de trabajo. 

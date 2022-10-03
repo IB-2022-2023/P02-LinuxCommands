@@ -1,0 +1,20 @@
+## Introducción a Linux. Ejercicios
+En este documento, el primer carácter `$` en los ejemplos de comandos no debe escribirse, sino que denota el
+símbolo del sistema (**prompt**).
+Algunas líneas de comandos son demasiado largas para caber en una sola línea impresa. 
+Estos se indican con una barra invertida `\` al final de la línea. 
+No debe incluirse al escribir el comando. 
+Por ejemplo
+
+``` .bash
+$ example command \
+continues \
+and continues
+```
+
+Debe escribirse como:
+
+``` .bash
+$ example command continues and continues
+```
+
