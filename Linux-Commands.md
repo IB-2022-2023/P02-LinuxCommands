@@ -108,7 +108,7 @@ Colóquese en el directorio `moving-around` y descomprima el fichero `dirs.tar.g
 
 ``` .bash
 $ cd moving-around
-$ tar zxvf dirs.tar.gz
+$ tar xvfz dirs.tar.gz
 ``` 
 
 Averigüe qué directorios y ficheros se crearon:
@@ -123,7 +123,7 @@ Y así sucesivamente...
 
 #### Ejercicio 5. ¿Qué fichero de salida trata sobre la cafeína?
 Acceda al subdirectorio de resultados (que a su vez contiene subdirectorios). 
-Los ficheros `pdb` tienen una línea con con el texto "TITLE AlgúnNombre". 
+Los ficheros `pdb` tienen una línea con con el texto *"TITLE AlgúnNombre"*. 
 
 A continuación se muestran algunos comandos que puede probar para averiguar qué fichero trata sobre la cafeína. 
 
