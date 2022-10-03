@@ -56,7 +56,7 @@ A este último directorio nos referiremos como 'directorio de trabajo'. Para ell
 2. Entre en el directorio de trabajo. 
 Encontrará en él el fichero `ProgrammingJoke.txt`. ¿Cuál es el chiste? Busque cualquier otro chiste famoso de programadores y añada el texto del nuevo chiste a continuación de éste.
 
-3. En este momento debería tener un fichero llamado `square.cc` en su directorio de trabajo.
+3. Debería tener un fichero llamado `square.cc` en su directorio de trabajo.
 Se trata de un fichero que contiene el código fuente de un programa escrito en C++.
 En clases de teoría estudiará qué es el código fuente.
 Utilice el comando
@@ -82,7 +82,7 @@ programa.
 4. ¿Cuál es el comando para borrar un fichero? Por ejemplo, ¿cómo eliminaría el fichero `square` resultado de la compilación en el paso anterior?
 5. ¿Qué comando usaría para cambiar el nombre de `square.cc` a `square_numbers.cc`?
 6. ¿Cómo se muestra un fichero de texto largo para que se detenga en cada pantalla?
-  Practique mostrando en pantalla el contenido del fichero `/proc/cpuinfo` que contiene información sobre las CPUs de su máquina.
+  Practique mostrando en pantalla el contenido del fichero `/proc/cpuinfo` (observe la ruta absoluta en el nombre de ese fichero) que contiene información sobre las CPUs de su máquina.
 7. ¿Qué contiene el fichero de texto `long-text-file.txt` que se encuentra en su directorio de trabajo?
 8. ¿Qué hacen las teclas de flechas arriba y flecha abajo cuando está ejecutándose la shell de Linux (bash)?
 9. En la shell, escriba el carácter `!` seguido de una letra como la `g` o la `l`, como en `!g` o `!l`.
