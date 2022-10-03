@@ -53,13 +53,32 @@ A este último directorio nos referiremos como 'directorio de trabajo'. Para ell
     git clone git@github.com:IB-2022-2023/P02-LinuxCommands.git IB-p02-LinuxCommands
     ```
 
-2. Entre en el directorio de trabajo (`IB-p02-LinuxCommands`). 
+2. Entre en el directorio de trabajo. 
 Encontrará en él el fichero `ProgrammingJoke.txt`. ¿Cuál es el chiste? Busque cualquier otro chiste famoso de programadores y añada el texto del nuevo chiste a continuación de éste.
 
 3. En este momento debería tener un fichero llamado `square.cc` en su directorio de trabajo.
-Utilice los comandos que ha aprendido para compilar y ejecutar ese programa. El programa tiene un error.
-  Debería ser capaz de detectar el error después de ejecutar el programa. Arregle el error y recompile el programa. Muestre a quien le evalúe esta práctica el fichero `square.cc` y acredite Ud. que sabe compilar y ejecutar el programa.
-4. ¿Cuál es el comando para borrar un fichero? Por ejemplo, ¿cómo eliminaría el fichero `a.out` resultado de la compilación en el paso anterior?
+Se trata de un fichero que contiene el código fuente de un programa escrito en C++.
+En clases de teoría estudiará qué es el código fuente.
+Utilice el comando
+
+`g++ -o square square.cc`
+
+para compilar ese programa.
+Compilar un programa es traducir el programa fuente a un fichero ejecutable que será posible ejecutar en el
+ordenador.
+
+Una vez compilado, liste los ficheros que se encuentran en el directorio de trabajo. 
+¿Observa algún cambio en esos ficheros?
+
+Identifique entre los ficheros del directorio de trabajo, alguno que sea ejecutable y ejecútelo.
+Para ello basta que escriba el comando
+
+`./nombre-fichero-ejecutable`
+
+(sustuyendo, obviamente *nombre-fichero-ejecutable* por el nombre de su fichero).
+Estudie el contenido del fichero que contiene el código fuente y trate de comprender cómo funciona el
+programa.
+4. ¿Cuál es el comando para borrar un fichero? Por ejemplo, ¿cómo eliminaría el fichero `square` resultado de la compilación en el paso anterior?
 5. ¿Qué comando usaría para cambiar el nombre de `square.cc` a `square_numbers.cc`?
 6. ¿Cómo se muestra un fichero de texto largo para que se detenga en cada pantalla?
   Practique mostrando en pantalla el contenido del fichero `/proc/cpuinfo` que contiene información sobre las CPUs de su máquina.
