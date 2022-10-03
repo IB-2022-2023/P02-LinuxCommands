@@ -78,6 +78,7 @@ Para ello basta que escriba el comando
 (sustuyendo, obviamente *nombre-fichero-ejecutable* por el nombre de su fichero).
 Estudie el contenido del fichero que contiene el código fuente y trate de comprender cómo funciona el
 programa.
+
 4. ¿Cuál es el comando para borrar un fichero? Por ejemplo, ¿cómo eliminaría el fichero `square` resultado de la compilación en el paso anterior?
 5. ¿Qué comando usaría para cambiar el nombre de `square.cc` a `square_numbers.cc`?
 6. ¿Cómo se muestra un fichero de texto largo para que se detenga en cada pantalla?
