@@ -152,7 +152,7 @@ el comando `cd`.
 ``` .bash
 $ tar cvfz dirs-new.tar.gz inputs outputs
 ```
-Observe en el comando anterior la opción `c` para **C**rear un fichero.
+Observe en el comando anterior la opción `c` para **C**rear el fichero *dirs-new.tar.gz*
 
 
 Confirme el contenido del fichero tar:
