@@ -9,14 +9,12 @@ Los objetivos de esta práctica son que el alumnado:
 * Sepa editar ficheros remotos en la VM de la asignatura usanso el editor [vim](https://missing.csail.mit.edu/2020/editors/)
 
 ### Rúbrica de evaluacion de esta práctica
-
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva) que se tendrán en cuenta a la hora de evaluar esta práctica:
-* El alumnado ha de acreditar que conoce el funcionamiento de los comandos básicos de Linux estudiados
 * Ha de acreditarse que se es capaz de conectarse a la máquina virtual de la asignatura y ejecutar comandos básicos de Linux para al menos: copiar, borrar y editar ficheros, crear directorios y compilar un programa en C++
+* El alumnado ha de acreditar que conoce el funcionamiento de los comandos básicos de Linux estudiados
 * Ha de acreditar que es capaz de editar ficheros remotos en la VM de la asignautra usando vi
 
 ### Introducción
-
 El propósito de esta práctica es estudiar los comandos básicos de Linux. Con la prevalencia en la actualidad de los sistemas operativos basados en Interfaces Gráficas de Usuario (GUIs), la necesidad de interaccionar con el sistema a través de comandos ha disminuído su importancia. No obstante, hay muchas tareas que son mucho más fáciles de realizar en un entorno Unix usando comandos y el trabajo mediante comandos también es casi obligatorio en entornos cliente/servidor. Por otra parte, la familiaridad con Unix mejorará la empleabilidad de cualquier ingeniero en informática.
 
 Si ya está familiarizado con Linux, esta práctica será muy corta. En cambio, si usted es nueva/o en Linux le tomará más tiempo, así que prepárese en consecuencia.
