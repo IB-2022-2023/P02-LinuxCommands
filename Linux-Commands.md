@@ -140,7 +140,7 @@ Puede mostrar el contenido completo de un fichero usando los comandos `more`, `l
 #### Ejercicio 6. Crear subdirectorios
 Solo hay tres directorios `result*`. 
 Cree directorios nuevos: `result4` y `result5` para los ficheros de salida 4 y 5 y mueva los ficheros de salida (`out_4.pdb`, `out_5.pdb`) a esos directorios.
-* cd al directorio `outputs`
+* `cd` al directorio `outputs`
 * Cree un nuevo subdirectorio con `mkdir result4`
 * Mueva el fichero `out_4.pdb` con el comando `mv result3/out_4.pdb result4`
 * Repita para `result5` y `out_5.pdb`
@@ -152,6 +152,8 @@ el comando `cd`.
 ``` .bash
 $ tar cvfz dirs-new.tar.gz inputs outputs
 ```
+Observe en el comando anterior la opción `c` para **C**rear un fichero.
+
 
 Confirme el contenido del fichero tar:
 ``` .bash
