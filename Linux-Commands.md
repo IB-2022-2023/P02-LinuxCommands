@@ -15,14 +15,18 @@ Se señalan a continuación los aspectos más relevantes (la lista no es exhaust
 * Ha de acreditar que es capaz de editar ficheros remotos en la VM de la asignautra usando vi
 
 ### Introducción
-El propósito de esta práctica es estudiar los comandos básicos de Linux. Con la prevalencia en la actualidad de los sistemas operativos basados en Interfaces Gráficas de Usuario (GUIs), la necesidad de interaccionar con el sistema a través de comandos ha disminuído su importancia. No obstante, hay muchas tareas que son mucho más fáciles de realizar en un entorno Unix usando comandos y el trabajo mediante comandos también es casi obligatorio en entornos cliente/servidor. Por otra parte, la familiaridad con Unix mejorará la empleabilidad de cualquier ingeniero en informática.
+El propósito de esta práctica es estudiar algunos comandos básicos de Linux. 
+Con la prevalencia en la actualidad de los sistemas operativos basados en Interfaces Gráficas de Usuario (GUIs), la necesidad de 
+interaccionar con el sistema a través de comandos ha disminuído su importancia. 
+No obstante, hay muchas tareas que son mucho más fáciles de realizar en un entorno Unix usando comandos y el trabajo mediante 
+comandos también es casi obligatorio en entornos cliente/servidor. 
+Por otra parte, la familiaridad con Unix mejorará la empleabilidad de cualquier ingeniero en informática.
 
 Si ya está familiarizado con Linux, esta práctica será muy corta. En cambio, si usted es nueva/o en Linux le tomará más tiempo, así que prepárese en consecuencia.
 
 En esta práctica no se va a programar comandos sino que los ejercicios están orientados a conocer los fundamentos del uso de Unix. Este conocimiento básico será necesario para completar sus tareas de programación en otras prácticas futuras de la asignatura.
 
 ### Conexión con su VM de la asignatura
-
 En la práctica anterior se estudió cómo realizar la conexión con la máquina virtual que utilizará usted en la asignatura. Recuerde que para ello necesita un cliente `ssh`.
 * Si se conecta Ud. desde un sistema Linux, abra un terminal y ejecute
 `ssh usuario@<dirección IP de su máquina>`
@@ -33,13 +37,12 @@ Recuerde que la dirección IP de su máquina tiene un formato similar a `10.6.12
 Recuerde también que si se conecta Ud. desde fuera del campus ULL ha de instalar e iniciar sesión usando un [cliente VPN](https://www.ull.es/servicios/stic/2016/05/10/servicio-de-vpn-de-la-ull/).
 
 ### Comandos Linux
-
 Estudie en [este tutorial](http://linuxcommand.org/index.php) al menos hasta el final de la sección 7
 (*"I/O Redirection"*) en el capítulo *"Learning the Shell"* aunque puede Ud. estudiar más allá de ese punto, si lo desea.
 
 Pruebe en su máquina virtual los comandos que estudie en el tutorial.
 
-### Introducción a Linux. Ejercicios
+### Ejercicios
 En este documento, el primer carácter `$` en los ejemplos de comandos no debe escribirse, sino que denota el
 símbolo del sistema (**prompt**).
 Algunas líneas de comandos son demasiado largas para caber en una sola línea impresa. 
@@ -72,7 +75,9 @@ $ git clone git@github.com:IB-2022-2023/P02-LinuxCommands.git IB-p02-LinuxComman
 
 #### Ejercicio 2. 
 acceda al directorio de trabajo. 
-Encontrará en él el fichero `ProgrammingJoke.txt`. ¿Cuál es el chiste? Busque cualquier otro chiste famoso de programadores y añada el texto del nuevo chiste a continuación de éste.
+Encontrará en él el fichero `ProgrammingJoke.txt`. 
+¿Cuál es el chiste? 
+Busque cualquier otro chiste famoso de programadores y utilice el editor vi para añadir el texto del nuevo chiste a continuación del que ya existe.
 
 #### Ejercicio 3. 
 En su directorio de trabajo hallará el fichero `linux-exercise.tar.gz`.
@@ -81,7 +86,7 @@ Se trata de un fichero *tar* (conjunto de ficheros) que a su vez está comprimid
 Descomprima ese fichero:
 
 ``` .bash
-$ tar xzvf linux-exercise.tar.gz 
+$ tar xvfz linux-exercise.tar.gz 
 ``` 
 
 Utilice [explainshell](https://explainshell.com/) para estudiar el significado de las diferentes opciones que
@@ -98,7 +103,6 @@ Pruebe a visualizar tanto los ficheros como solamente los directorios del árbol
 
 #### Ejercicio 4. Desplazarse por el árbol de directorios 
 Comandos en este ejercicio: `cd`, `mkdir`, `ls`, `mv`, `more`, `less`, `cat`, `tar`.
-
 El objetivo de este ejercicio es aprender a moverse con `cd`, ver el contenido de los ficheros,
 crear directorios, mover y copiar ficheros.
 
@@ -132,7 +136,6 @@ $ grep title */*.pdb
 $ grep TITLE */*.pdb
 ``` 
 ¿Sobre qué trata la información del resto de ficheros?
-
 Puede mostrar el contenido completo de un fichero usando los comandos `more`, `less` o `cat`.
 
 #### Ejercicio 6. Crear subdirectorios
@@ -157,6 +160,13 @@ Confirme el contenido del fichero tar:
 ``` .bash
 $ tar tvf dirs-new.tar.gz
 ``` 
+Para visualizar página a página el contenido del fichero *tar* comprimido puede usar un *pipe* encadenando la
+ejecución del comando anterior con `more`:
+``` .bash
+$ tar tvf dirs-new.tar.gz | more
+``` 
+
+
 
 #### Ejercicio 8. Use el comando `man` (*manual*) para encontrar opciones para el comando `ls`
 Comandos en este ejercicio: `man`, `ls`.
