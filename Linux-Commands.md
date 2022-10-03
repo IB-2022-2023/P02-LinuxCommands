@@ -157,12 +157,11 @@ Observe en el comando anterior la opción `c` para **C**rear el fichero *dirs-ne
 
 Confirme el contenido del fichero tar:
 ``` .bash
-$ tar ztf dirs-new.tar.gz
+$ tar tvf dirs-new.tar.gz
 ``` 
 
 #### Ejercicio 8. Use el comando `man` (*manual*) para encontrar opciones para el comando `ls`
 Comandos en este ejercicio: `man`, `ls`.
-
 En este ejercicio aprenderá cómo encontrar información detallada sobre las opciones y sobre cómo ordenar la salida del comando `ls`.
 
 Abra la página de manual de `ls`
@@ -200,7 +199,7 @@ Puede dar las opcións al comando `ls` juntas (por ejemplo, `ls -la` en lugar de
 
 Busque la opción que mostrará el tamaño del fichero en "formato legible por humanos", es decir, kB/MB/GB en lugar de bytes (el valor predeterminado).
 
-Sugerencia: también puede buscar el significado de las opcións directamente por `/-S` (que buscará la aparición de `-S` (o incluso mejor `-S ` (con un espacio final)) si quiere saber qué hace esa opción.
+Sugerencia: también puede buscar el significado de las opciones directamente por `/-S` (que buscará la aparición de `-S` (o incluso mejor `-S ` (con un espacio final)) si quiere saber qué hace esa opción.
 
 
 ##### Ordenar el contenido del directorio por fecha de creación de los ficheros
@@ -217,8 +216,8 @@ $ touch nombre-fichero
 ``` 
 modifica la fecha del fichero que se le pasa como parámetro (*nombre-fichero*).
 
-### Ejercicio 9. Uso de comodines (*wildcards*)
-Comandos en este ejercicio: `ls., `cp`.
+#### Ejercicio 9. Uso de comodines (*wildcards*)
+Comandos en este ejercicio: `ls`, `cp`.
 En este ejercicio aprenderá a actuar sobre múltiples ficheros usando comodines.
 
 Linux habilita comodines o expresiones regulares para hacer coincidir ficheros o cadenas que difieren solo en algunas formas controladas.
@@ -261,12 +260,8 @@ $ ls */out_[2-5].pdb
 $ ls */*[2-5].pdb
 ```
 
-
-
-####################################################################
-
-#### Ejercicio 3. 
-Debería tener un fichero llamado `square.cc` en su directorio de trabajo.
+#### Ejercicio 10. 
+Localice entre los ficheros de esta práctica uno llamado `square.cc`.
 Se trata de un fichero que contiene el código fuente de un programa escrito en C++.
 En clases de teoría estudiará qué es el código fuente.
 Utilice el comando
@@ -289,24 +284,26 @@ Para ello basta que escriba el comando
 Estudie el contenido del fichero que contiene el código fuente y trate de comprender cómo funciona el
 programa.
 
-#### Ejercicio 4. 
-¿Cuál es el comando para borrar un fichero? Por ejemplo, ¿cómo eliminaría el fichero `square` resultado de la compilación en el paso anterior?
-#### Ejercicio 5. 
-¿Qué comando usaría para cambiar el nombre de `square.cc` a `square_numbers.cc`?
-#### Ejercicio 6. 
+#### Ejercicio 11. 
+Elimine el fichero `square` resultado de la compilación en el paso anterior.
+Tenga en cuenta que en Linux (Unix) una vez un fichero se borra, lo perderá para siempre.
+#### Ejercicio 12. 
+Cambie el nombre de `square.cc` a `square_numbers.cc`.
+#### Ejercicio 13. 
 ¿Cómo se muestra un fichero de texto largo para que se detenga en cada pantalla?
-  Practique mostrando en pantalla el contenido del fichero `/proc/cpuinfo` (observe la ruta absoluta en el nombre de ese fichero) que contiene información sobre las CPUs de su máquina.
-#### Ejercicio 7. 
+Practique mostrando en pantalla el contenido del fichero `/proc/cpuinfo` (observe la ruta absoluta en el nombre de ese fichero) que contiene información sobre las CPUs de su máquina.
+#### Ejercicio 14. 
 ¿Qué contiene el fichero de texto `long-text-file.txt` que se encuentra en su directorio de trabajo?
-#### Ejercicio 8. 
+#### Ejercicio 15. 
 ¿Qué hacen las teclas de flechas arriba y flecha abajo cuando está ejecutándose la shell de Linux (bash)?
-#### Ejercicio 9. 
+#### Ejercicio 16. 
 En la shell, escriba el carácter `!` seguido de una letra como la `g` o la `l`, como en `!g` o `!l`.
 Experimente con otras letras después del símbolo de exclamación. ¿Qué hace la exclamación?
-#### Ejercicio 10. 
-Experimente con el comando `grep`. `grep` es un programa que permite buscar texto usando expresiones regulares (estudiará Ud. expresiones regulares más adelante en 2º curso). Por ahora, puede usarlo para buscar un patrón de texto. Un uso básico del comando es:
+#### Ejercicio 17. 
+Experimente con el comando `grep`. `grep` es un programa que permite buscar texto usando expresiones regulares (estudiará Ud. expresiones regulares más adelante en 2º curso). 
+Por ahora, puede usarlo para buscar un patrón de texto. Un uso básico del comando es:
   `grep string target-file`
   Ese comando localiza todas las apariciones de la cadena de texto `string` en el fichero `target-file` El fichero `long-text-file.txt` contiene 187018 palabras. Use grep para encontrar todas las palabras que contengan "aula" en ese fichero. ¿Cuáles son esas las palabras?
-#### Ejercicio 11. 
+#### Ejercicio 18. 
 Use un *pipe* (encadenamiento de comandos). El comando `wc` (de *Word Count*) indica cuántas líneas, palabras y caracteres hay en un fichero. Utilice el comando `man` para conocer el funcionamiento de `wc`, así como información detallada del comando. Utilizando `wc` averigüe cuantas líneas, palabras y caracteres contiene el fichero `long-text-file.txt`
   Utilice un *pipe* (usando el caracter `|`) para vincular los dos comandos anteriores (`grep` y `wc`) entre sí, para averiguar cuántas veces aparecen en el fichero `long-text-file.txt` cada una de las palabras que contienen la subpalabra "aula". Escriba un fichero de texto `aula.txt` en el que figure cada una de estas palabras y el número de veces que aparece en el fichero `long-text-file.txt`.
